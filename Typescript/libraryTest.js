@@ -1,0 +1,12 @@
+"use strict";
+exports.__esModule = true;
+var books_1 = require("./books");
+var library_1 = require("./library");
+var libreria = new library_1.Library([], "Palma", "Joshua");
+var libro1 = new books_1.Book("quijote", 1000, 456729, "Cervantes", "anaya");
+var libro2 = new books_1.Book("Buscón", 678, 56978, "Quevedo", "Everest");
+console.log(libreria.getAdress());
+console.log(libreria.getManager());
+console.log(libreria.getNumberBooks());
+console.log(libreria.printAllBooks());
+console.log(libreria.findByAuthor("Quevedo"));
